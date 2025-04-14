@@ -169,10 +169,25 @@
 .box div{
   border: 1px solid black;
   width: 300px;
-  height: 200px;
+  height: 300px;
   margin:10px;
   padding:20px;
-  border-radius: 15px;
+  border-radius: 15px;
+}
+.box div img{
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-image: cover;
+}
+.name{
+  
+  /*  float: right; */
+font-size: 20px;
+  font-weight: bold;
+  margin-top: 17px;
 }
 .hide{
   display: none;

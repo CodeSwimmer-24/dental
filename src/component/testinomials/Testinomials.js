@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../App.css';
+import doctor3 from '../../icons/download.jpg'
 
 function Testinomials() {
   return (
@@ -31,13 +32,26 @@ function Testinomials() {
       }}
       > specialist dental treatments. With dental practices throunght the world </p>
       <div className='box'>
+          <div> 
+          I want to say thank you to my doctor 
+          steve! Vivamus sagittis messa vitae
+          bibendum rhoncus . duis cursus 
+          thank you for helping the overcome 
+          my fear of the dentist! Vivamus sagittis
+          messa vitae bibendum rhoncus
+          <img src={doctor3} alt=" Jenny Wilson"/>
+            <h4 className='name'> Dianne Russell </h4>
+        </div>
+
         <div >
           I want to say thank you to my doctor 
           steve! Vivamus sagittis messa vitae
           bibendum rhoncus . duis cursus 
           thank you for helping the overcome 
           my fear of the dentist! Vivamus sagittis
-          messa vitae bibendum rhoncus . duis cursus.
+          messa vitae bibendum rhoncus
+          <img src={doctor3} alt=" Jenny Wilson"/>
+            <h4 className='name'> Jenny Wilson </h4>
         </div>
         <div >
           I want to say thank you to my doctor 
@@ -45,7 +59,9 @@ function Testinomials() {
           bibendum rhoncus . duis cursus 
           thank you for helping the overcome 
           my fear of the dentist! Vivamus sagittis
-          messa vitae bibendum rhoncus . duis cursus.
+          messa vitae bibendum rhoncus
+          <img src={doctor3} alt=" Jenny Wilson"/>
+            <h4 className='name'> Dianne Russell </h4>
         </div>
         <div >
           I want to say thank you to my doctor 
@@ -53,7 +69,9 @@ function Testinomials() {
           bibendum rhoncus . duis cursus 
           thank you for helping the overcome 
           my fear of the dentist! Vivamus sagittis
-          messa vitae bibendum rhoncus . duis cursus.
+          messa vitae bibendum rhoncus
+          <img src={doctor3} alt=" Jenny Wilson"/>
+            <h4 className='name'> Jenny Wilson</h4>
         </div>
         <div >
           I want to say thank you to my doctor 
@@ -61,15 +79,9 @@ function Testinomials() {
           bibendum rhoncus . duis cursus 
           thank you for helping the overcome 
           my fear of the dentist! Vivamus sagittis
-          messa vitae bibendum rhoncus . duis cursus.
-        </div>
-        <div style={{marginBottom:'300px'}}>
-          I want to say thank you to my doctor 
-          steve! Vivamus sagittis messa vitae
-          bibendum rhoncus . duis cursus 
-          thank you for helping the overcome 
-          my fear of the dentist! Vivamus sagittis
-          messa vitae bibendum rhoncus . duis cursus.
+          messa vitae bibendum rhoncus
+          <img src={doctor3} alt=" Jenny Wilson"/>
+            <h4 className='name'> Dianne Russell </h4>
         </div>
       </div>
 
