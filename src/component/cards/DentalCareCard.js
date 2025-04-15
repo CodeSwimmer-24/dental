@@ -3,20 +3,7 @@ import '../../App.css';
 import toothicon from '../../icons/tooth-icon.png';
 
 const DentalCareCard = () => {
-//   function showmore(){
-//     if(document.getElementById('btn').innerHTML==="Learn More"){
-// document.getElementById('show').classList.remove('hide');
-// document.getElementById('btn').innerHTML="Learn Less";
-// document.getElementById('more').classList.add('hide');
-//     }
-//     else{
-//       document.getElementById('show').classList.add('hide');
 
-//       document.getElementById('more').classList.remove('hide');
-
-//       document.getElementById('btn').innerHTML="Learn More";
-//     }
-//   }
   return (
     <div className="card">
          <img src={toothicon} alt="Cosmetic Icon" />
