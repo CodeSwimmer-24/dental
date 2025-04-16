@@ -1,0 +1,278 @@
+:root {
+  /* all colors  */
+  --primary-color: #0b3b53;
+  --secondary-color: #2396d4;
+}
+
+/* Navbar Start */
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-right {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  color: white;
+  font-size: 20px;
+}
+
+.brand-name strong {
+  color: white;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  transition: 150ms;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+.dropdown-menu li {
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.hamburger {
+  z-index: 100;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  display: none;
+  background-color: var(--secondary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.book-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 150ms;
+}
+
+.book-button .arrow-right {
+  font-weight: bold;
+}
+
+/* navbar hover properties */
+li > .link:hover {
+  color: var(--secondary-color);
+}
+
+.dropdown-menu li:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+  /* border-radius: 5px; */
+}
+
+.dropdown-menu li .link:hover {
+  color: var(--primary-color);
+}
+
+.book-button:hover {
+  background-color: var(--primary-color);
+}
+
+/* navbar hover properties end  */
+
+/* Responsiveness starts */
+@media (max-width: 1100px) {
+  .nav-links {
+    gap: 20px;
+  }
+}
+@media (max-width: 970px) {
+  .arrow-right {
+    display: none;
+  }
+  .navbar-right {
+    width: 80%;
+  }
+}
+@media (max-width: 930px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar-right {
+    width: 100%;
+    top: 9%;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links {
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links > li {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li > .link:hover {
+    color: var(--primary-color);
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  .navbar-right .book-button {
+    background-color: var(--primary-color);
+  }
+}
+/* responsiveness ends */
+
+/* animation start  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* animation ends  */
+
+/* navbar ends  */
+
+/* Footer start  */
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-right: 50px;
+  flex: 1;
+  min-width: 200px;
+}
+.brand .logo {
+  font-size: 1.8rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+hr {
+  margin-top: 20px;
+  border-color: var(--secondary-color);
+  opacity: 30%;
+}
+.footer p {
+  /* margin-top: 30px; */
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+/* Footer hover start */
+.socials > .link:hover {
+  color: var(--secondary-color);
+}
+/* Footer hover end */
+
+/* Footer end  */
