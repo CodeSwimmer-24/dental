@@ -1,18 +1,10 @@
 
-import React from 'react';
-import './App.css'; 
-import ContactHeader from './components/ContactHeader';  
-import ContactPage from './components/ContactPage'; 
+import React from "react";
+import Home from "./pages/HomePage/Home";
 
-function App() {
-  console.log("Hello from the contacts branch!");
+const App = () => {
+  return <div><Home/></div>;
+};
 
-  return (
-    <div className="App">
-      <ContactHeader />
-      <ContactPage />
-    </div>
-  );
-}
 
 export default App;
