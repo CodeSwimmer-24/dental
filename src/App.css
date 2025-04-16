@@ -1,38 +1,199 @@
-.App {
+
+/* === Contact Header === */
+.contact-header {
+  background: linear-gradient(to right, #0f4c75, #1b262c);
+  color: #fff;
+  padding: 70px 20px;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.contact-header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-header p {
+  font-size: 16px;
+  color: #ccc;
+}
+.contact-header span {
+  font-weight: 500;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* === Contact Page Layout === */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* === Left Column (Info) === */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+.info-card {
+  display: flex;
+  gap: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 18px 20px;
+  background-color: #ffffff;
+  border-left: 5px solid #0f4c75;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.info-card i {
+  font-size: 20px;
+  color: #0f4c75;
 }
 
-.App-link {
-  color: #61dafb;
+.info-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.info-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.social-icons p {
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.social-icons i {
+  color: #444;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #0f4c75;
+}
+/* === Right Column (Form) === */
+.contact-form {
+  flex: 2;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.contact-form h5 {
+  color: #0f4c75;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact-form h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact-form p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #fefefe;
+  transition: border-color 0.3s;
+}
+input:focus,
+textarea:focus {
+  border-color: #0f4c75;
+  outline: none;
+  background-color: #fff;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row div {
+  flex: 1;
+}
+.error-message {
+  color: red !important;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* === Submit Button === */
+.submit-btn {
+  background-color: #0f4c75;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #06283d;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form-row {
+    flex-direction: column;
+  }
+  .submit-btn {
+    width: 100%;
   }
 }
+
+
+
+
+
+
+  
+
+
+
